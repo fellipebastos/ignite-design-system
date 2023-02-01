@@ -4,10 +4,14 @@
     "packages/*"
   ],
   "scripts": {
+    "build": "turbo run build",
+    "changeset": "changeset",
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build"
+    "release": "turbo run build --filter=packages/docs && changeset publish",
+    "version-packages": "changeset version"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "turbo": "^1.7.0"
   }
 }

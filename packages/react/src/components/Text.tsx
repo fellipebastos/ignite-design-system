@@ -1,4 +1,4 @@
-import { fontSizes } from '@ignite-ui/tokens'
+import { fontSizes } from '@bastos-ignite-ui/tokens'
 import { ComponentProps, ElementType } from 'react'
 import { styled } from '../styles'
 

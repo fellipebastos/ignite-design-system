@@ -1,6 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Text, TextProps } from '@ignite-ui/react'
-import { fontSizes } from '@ignite-ui/tokens'
+import { Text, TextProps } from '@bastos-ignite-ui/react'
+import { fontSizes } from '@bastos-ignite-ui/tokens'
 
 export default {
   title: 'Typography/Text',
