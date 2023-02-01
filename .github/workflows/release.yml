@@ -24,16 +24,13 @@ jobs:
       
       - run: npm ci
 
-      - run: npm run build
-
       - name: Publish to NPM
         id: changesets
         uses: changesets/action@v1
         with:
-          # This expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}\
-          TURBO_TOKEN: thZofpB5Qwp8r0SkP1A7yjZX
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO_TEAM: fellipebastos
